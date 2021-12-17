@@ -1,0 +1,21 @@
+header {
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    padding: 0 auto;
+    left: 0px;
+    top: 0px;
+    color: $blanco;
+    background: $azul-marino;
+    font-size: small;
+    }
+
+    .div_header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+      
