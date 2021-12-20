@@ -19,6 +19,19 @@
     background-color: $blanco;
     color: $azul-marino;
   }
+
+  .tab2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  } 
+
+.industrialdesign{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+}
   
   #radio1, #radio2, #radio3, #radio4{
     display:none;
