@@ -23,16 +23,20 @@
   .tab2{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+   flex-direction: column;
   } 
 
-.industrialdesign{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-end;
-}
+  .content_whatido {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
   
+  }
+
+.whatido_item{
+ margin: 0 20px;
+}
+
   #radio1, #radio2, #radio3, #radio4{
     display:none;
   }
