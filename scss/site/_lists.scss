@@ -1,18 +1,29 @@
-.list-software{
+
+ul[class^='list']{   
     display: grid;
-    grid-template-columns: repeat(3, minmax(140px, 100px));
     gap: 0px 10px;
     padding: 0px;
-    margin: 20px 0px 0px;
+    margin: 5px 0px 0px;
     overflow: hidden;
     list-style: none;
+
 }
+
 .list-estudios{
-    display: grid;
+
     grid-template-columns: repeat(1, minmax(500px, 700px));
-    gap: 0px 10px;
-    padding: 0px;
-    margin: 20px 0px 0px;
-    overflow: hidden;
-    list-style: none;
+  
+}
+
+.list-software{
+
+    grid-template-columns: repeat(3, minmax(140px, 100px));
+   
+}
+
+
+ul[class^='list-idiomas']{
+
+    grid-template-columns: repeat(1, minmax(500px, 600px));
+  
 }

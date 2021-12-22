@@ -2,11 +2,13 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0 0 0 0;
+    
     // background-image: linear-gradient(90deg, $azul-cyan 50%, $azul-marino 100%);
     // background-repeat: no-repeat;
     // background-size: cover;
 
-    // El color en degradado del fondo no funciona bien
+    // El color en degradado del fondo no funciona bien, por eso hay un color sólido
+
     background-color: $azul-cyan;
     display: flex;
     flex-direction: column;
