@@ -221,6 +221,8 @@ label {
           transform: scale(0.9);
   background-color: white;
   color: #1D3557;
+  -webkit-box-shadow: 5px 5px 7px 5px #313131;
+          box-shadow: 5px 5px 7px 5px #313131;
 }
 
 .tab2 {
