@@ -1,7 +1,7 @@
 header {
     position: fixed;
     width: 100vw;
-    height: 50px;
+    height: 65px;
     padding: 0 auto;
     left: 0px;
     top: 0px;
@@ -11,12 +11,29 @@ header {
     z-index: 3;
     }
 
-    .div_header{
+    .container_header{
+      height: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-items: center;
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
+      justify-content: space-between;
     }
       
+    .div_header{
+      margin: 10px 20px;
+      min-width: 100px;
+    }
+
+  .cv_button{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 10px 60px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }

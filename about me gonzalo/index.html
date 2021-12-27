@@ -13,9 +13,13 @@
 <body>
 
     <header>
-        <div class="div_header">
-            <div>
+        <div class="container_header">
+            <div class="div_header"></div>
+            <div class="div_header">
                 <p>GONZALO SORIANO Diseñador Industrial</p>
+            </div>
+            <div class="div_header cv_button">
+                <a href="../files/cv_GonzaloSoriano_esp.pdf" class="resumen-botton" target="_blank">Resume</a>
             </div>
         </div>
     </header>
@@ -209,8 +213,31 @@
             <input type="radio" name="radio" id="radio4">
             <div class="tab4">
                 <h2>CONTACT ME </h2>
-                <p>Um, yeah well I might have sort of ran into my parents.
-                </p>
+                <form class="contactMe" action="">
+
+                    <div class="form-contact-grid">
+
+                        <div class="name">
+                            <label for="first-name">Nombre *</label>
+                            <input type="text" class="text-field" maxlength="256" required>
+                        </div>
+
+                        <div class="number">
+                            <label for="contact-number">Teléfono</label>
+                            <input type="tel" class="text-field" maxlength="256">
+                        </div>
+
+                        <div class="email">
+                            <label for="contact-email">E-mail *</label>
+                            <input type="email" class="text-field" maxlength="256" required>
+                        </div>
+
+                        <div class="message">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Example text"></textarea>
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </div>
