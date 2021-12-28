@@ -17,7 +17,7 @@
     .number { grid-area: 1 / 2 / 2 / 3; }
     .email { grid-area: 2 / 1 / 3 / 3; }
     .message { grid-area: 3 / 1 / 4 / 3; }
-    .contact-form__submit { grid-area: 4 / 1 / 5 / 3; }
+    .send-button { grid-area: 4 / 1 / 5 / 3; }
 
 .text-field{
     display: block;
@@ -31,4 +31,20 @@
 .message{
     display: flex;
     flex-direction: column;
+}
+
+.send-button {
+	box-shadow:inset 0px 1px 3px 0px $amarillo;
+	background-color: $amarillo;
+	border-radius: 12px;
+	border:1px solid $azul-marino;
+	display:inline-block;
+	cursor:pointer;
+	color:$azul-marino;
+	font-family:$generalfont;
+	font-size: 18px;
+	font-weight:bold;
+    margin: 10px 100px;
+	padding:11px 23px;
+	text-decoration:none;
 }

@@ -84,7 +84,7 @@ body {
   grid-area: 3/1/4/3;
 }
 
-.contact-form__submit {
+.send-button {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -109,6 +109,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.send-button {
+  -webkit-box-shadow: inset 0px 1px 3px 0px #f2a03d;
+          box-shadow: inset 0px 1px 3px 0px #f2a03d;
+  background-color: #f2a03d;
+  border-radius: 12px;
+  border: 1px solid #1D3557;
+  display: inline-block;
+  cursor: pointer;
+  color: #1D3557;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 100px;
+  padding: 11px 23px;
+  text-decoration: none;
 }
 
 header {
