@@ -178,7 +178,7 @@ a {
 }
 
 .container {
-  max-width: 1024px;
+  min-width: 600px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,7 +268,6 @@ label {
 }
 
 .content {
-  width: 700px;
   height: 400px;
   margin-bottom: 350px;
   display: -webkit-box;
@@ -281,7 +280,7 @@ label {
 
 [class^=tab] {
   position: absolute;
-  margin: 0 0 0 0;
+  margin: 0 10px 0 10px;
   max-width: 900px;
   line-height: 1.8;
   border-radius: 20px;
@@ -341,7 +340,7 @@ label {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 150px;
   margin-right: 0px;
   padding: 0px auto;
@@ -384,18 +383,38 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 0px 0px 0px 0px;
+  margin-right: 0px;
+}
+
+.social-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .social-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social-icon svg {
+  margin-right: 10px;
+}
+
+.social-icon svg path {
+  fill: #A8DADC;
 }
 
 ul[class^=list] {
@@ -471,6 +490,13 @@ ul[class^=list-idiomas] {
   .lbl-menu--icono {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+
+  .content_whatido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .card-link {
@@ -556,5 +582,5 @@ h3 {
 }
 
 .round-border {
-  border-radius: 12px;
+  border-radius: 10px;
 }
