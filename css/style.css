@@ -167,7 +167,12 @@ header {
   min-width: 100px;
 }
 
+.header-name {
+  min-width: 160px;
+}
+
 .cv_button {
+  min-width: 100px;
   cursor: pointer;
   border: 2px solid white;
   border-radius: 12px;
@@ -214,8 +219,6 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-grid-column-align: center;
       justify-self: center;
   -webkit-box-pack: justify;
@@ -306,6 +309,7 @@ label {
 
 .tab2 {
   width: 60%;
+  min-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,15 +331,19 @@ label {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .whatido_item {
   margin: 0 20px;
-  min-width: 170px;
+  min-width: 225px;
 }
 
 .tab3 {
   width: 60%;
+  min-width: 530px;
 }
 
 .tab4 {
@@ -495,16 +503,8 @@ ul[class^=list-idiomas] {
 
 @media screen and (max-width: 600px) {
   .lbl-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .lbl-menu--icono {
@@ -512,12 +512,10 @@ ul[class^=list-idiomas] {
             transform: scale(0.7);
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1275px) {
   .content_whatido {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 780px) {

@@ -31,6 +31,7 @@
   //////// tab2: WHAT I DO    ////////////////
   .tab2{
     width: 60%;
+    min-width: 350px;
     display: flex;
     justify-content: center;
    flex-direction: column;
@@ -39,18 +40,19 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-  
+  justify-content: center;
   }
 
 .whatido_item{
  margin: 0 20px;
- min-width: 170px;
+ min-width: 225px;
 }
 
 
  //////// tab3: SKILLS   ////////////////
   .tab3{
     width: 60%;
+    min-width: 530px;
   }
 
    // tab4: CONTACT ME

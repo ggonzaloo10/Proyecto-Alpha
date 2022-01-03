@@ -1,8 +1,11 @@
+
+// MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
+
 @media screen and (max-width: 600px) {
     .lbl-menu {
-      display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+      flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: flex-start;
     } 
   
     .lbl-menu--icono{
@@ -12,13 +15,13 @@
     
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1275px) {
 
   
 
    
     .content_whatido{
-      flex-direction: column;
+      flex-wrap: wrap;
     }
     
   }
