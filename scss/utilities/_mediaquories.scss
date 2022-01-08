@@ -38,3 +38,16 @@
   }
   
 }
+
+@media screen and (max-width: 1235px) {
+
+  .hobbies p{
+    max-width: 90%;
+  }
+
+  .astro{
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  
+}

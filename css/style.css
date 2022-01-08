@@ -275,7 +275,7 @@ label {
 }
 
 .content {
-  height: 400px;
+  height: 1100px;
   margin-bottom: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,8 +303,58 @@ label {
           box-shadow: 5px 5px 7px 5px #313131;
 }
 
+#radio1, #radio2, #radio3, #radio4 {
+  display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .tab1 {
   width: 80%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-bottom: 20px;
+}
+
+.hobbies {
+  max-width: 90%;
+  background: #A8DADC;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.hobbies p {
+  font-size: small;
+  max-width: 50%;
+  padding: 20px 20px 20px 20px;
+}
+
+.svg-hobby {
+  margin: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .tab2 {
@@ -347,22 +397,8 @@ label {
 }
 
 .tab4 {
-  width: 30%;
+  width: 35%;
   min-width: 360px;
-}
-
-#radio1, #radio2, #radio3, #radio4 {
-  display: none;
-}
-
-#radio1:checked ~ .tab1,
-#radio2:checked ~ .tab2,
-#radio3:checked ~ .tab3,
-#radio4:checked ~ .tab4 {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 footer {
@@ -521,6 +557,21 @@ ul[class^=list-idiomas] {
 @media screen and (max-width: 780px) {
   a #text {
     display: none;
+  }
+}
+@media screen and (max-width: 1235px) {
+  .hobbies p {
+    max-width: 90%;
+  }
+
+  .astro {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .card-link {

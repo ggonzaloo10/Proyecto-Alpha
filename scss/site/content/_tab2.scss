@@ -1,0 +1,19 @@
+ //////// tab2: WHAT I DO    ////////////////
+ .tab2{
+    width: 60%;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+  } 
+  .content_whatido {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  justify-content: center;
+  }
+
+.whatido_item{
+ margin: 0 20px;
+ min-width: 225px;
+}

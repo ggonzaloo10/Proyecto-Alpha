@@ -1,5 +1,5 @@
 .content{
-    height: 400px;
+    height: 1100px;
     margin-bottom: 350px;
     display: flex;
     justify-content: center;
@@ -20,47 +20,6 @@
     color: $azul-marino;
     box-shadow: 5px 5px 7px 5px #313131;
   }
-
-
-   //////// tab1: WHO I AM    ////////////////
-.tab1{
-  width: 80%;
-}
-
-
-  //////// tab2: WHAT I DO    ////////////////
-  .tab2{
-    width: 60%;
-    min-width: 350px;
-    display: flex;
-    justify-content: center;
-   flex-direction: column;
-  } 
-  .content_whatido {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-  justify-content: center;
-  }
-
-.whatido_item{
- margin: 0 20px;
- min-width: 225px;
-}
-
-
- //////// tab3: SKILLS   ////////////////
-  .tab3{
-    width: 60%;
-    min-width: 530px;
-  }
-
-   // tab4: CONTACT ME
-   .tab4{
-    width: 30%;
-    min-width: 360px;
-  }
-
   
 
   #radio1, #radio2, #radio3, #radio4{

@@ -1,0 +1,30 @@
+
+ //////// tab1: WHO I AM    ////////////////
+ .tab1{
+    width: 80%;
+ display: grid;
+ place-items: center;
+ padding-bottom: 20px;
+ }
+  
+  .hobbies{
+    max-width: 90%;
+   background: $azul-claro;
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+  }
+  
+  .hobbies p{
+    font-size: small;
+    max-width: 50%;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .svg-hobby{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
