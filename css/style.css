@@ -346,8 +346,8 @@ label {
 }
 
 .texto-hobby {
-  max-width: 60%;
-  font-size: small;
+  max-width: 50%;
+  font-size: smaller;
 }
 
 .svg-hobby {
@@ -404,7 +404,7 @@ label {
 }
 
 .tab4 {
-  width: 35%;
+  width: 45%;
   min-width: 360px;
 }
 
@@ -556,7 +556,7 @@ ul[class^=list-idiomas] {
   }
 }
 @media screen and (max-width: 1275px) {
-  .content_whatido {
+  .hobbies {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -564,6 +564,16 @@ ul[class^=list-idiomas] {
 @media screen and (max-width: 1235px) {
   .texto-hobby {
     max-width: 90%;
+  }
+
+  .crossfit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .astro {
