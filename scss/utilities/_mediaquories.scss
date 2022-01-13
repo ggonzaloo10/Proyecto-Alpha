@@ -1,5 +1,5 @@
 
-// MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
+// MEDIA QUORIES PARA HACER RESPONSIVE EL MENU
 
 @media screen and (max-width: 600px) {
     .lbl-menu {
@@ -15,13 +15,30 @@
     
   }
 
+  // MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
+
   @media screen and (max-width: 1275px) {
-
-  
-
    
-    .content_whatido{
+    .hobbies{
       flex-wrap: wrap;
+    }
+    
+  }
+
+  @media screen and (max-width: 1235px) {
+
+    .texto-hobby{
+      max-width: 90%;
+    }
+    
+  .crossfit{
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .astro{
+      align-content: center;
+      flex-direction: column-reverse;
     }
     
   }
@@ -39,15 +56,3 @@
   
 }
 
-@media screen and (max-width: 1235px) {
-
-  .hobbies p{
-    max-width: 90%;
-  }
-
-  .astro{
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-  
-}

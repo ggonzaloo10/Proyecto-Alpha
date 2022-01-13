@@ -340,10 +340,14 @@ label {
   margin-top: 20px;
 }
 
-.hobbies p {
-  font-size: small;
+.hobbies div {
   max-width: 50%;
   padding: 20px 20px 20px 20px;
+}
+
+.texto-hobby {
+  max-width: 60%;
+  font-size: small;
 }
 
 .svg-hobby {
@@ -355,6 +359,9 @@ label {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab2 {
@@ -554,24 +561,23 @@ ul[class^=list-idiomas] {
         flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 780px) {
-  a #text {
-    display: none;
-  }
-}
 @media screen and (max-width: 1235px) {
-  .hobbies p {
+  .texto-hobby {
     max-width: 90%;
   }
 
   .astro {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 780px) {
+  a #text {
+    display: none;
   }
 }
 .card-link {

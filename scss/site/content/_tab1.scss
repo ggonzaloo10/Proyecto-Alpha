@@ -17,14 +17,20 @@
    margin-top: 20px;
   }
   
-  .hobbies p{
-    font-size: small;
+  .hobbies div{
+    
     max-width: 50%;
     padding: 20px 20px 20px 20px;
   }
   
+  .texto-hobby{
+    max-width: 50%;
+    font-size: smaller;
+  }
+
   .svg-hobby{
     margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
