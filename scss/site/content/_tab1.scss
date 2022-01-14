@@ -6,7 +6,15 @@
  place-items: center;
  padding-bottom: 20px;
  }
+ 
+//  PRIMER TEXTO WHOIAM
+
+ .tab1 p{
+   max-width: 90%;
+ }
   
+//  CUADROS  HOBBIES //////
+
   .hobbies{
     max-width: 90%;
    background: $azul-claro;
@@ -15,22 +23,53 @@
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
+   box-shadow: 3px 3px 5px 3px #4e4e4e;
   }
   
   .hobbies div{
-    
-    max-width: 50%;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px; 
+    align-items: center;
   }
+
+
   
+  // TEXTO DENTRO DE LOS CUADROS HOBBIES ////
+
   .texto-hobby{
     max-width: 50%;
     font-size: smaller;
+    
   }
+
+  .texto-hobby h4{
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .texto-hobby a{
+    color: $azul-marino;
+    font-weight: 600;
+  }
+  // IMAGENES HOBBIES ///
 
   .svg-hobby{
     margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+// 1 HOBBIES: MYSELF 
+
+  .myself .texto-hobby{
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+
+
+// 3 HOBBIES: ASTRONOMY /// 
+  .astro .texto-hobby{
+    display: flex;
   }

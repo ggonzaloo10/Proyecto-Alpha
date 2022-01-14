@@ -17,13 +17,13 @@
 
   // MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
 
-  @media screen and (max-width: 1275px) {
+  // @media screen and (max-width: 1275px) {
    
-    .hobbies{
-      flex-wrap: wrap;
-    }
+  //   .hobbies{
+  //     flex-wrap: wrap;
+  //   }
     
-  }
+  // }
 
   @media screen and (max-width: 1235px) {
 
@@ -41,6 +41,11 @@
       flex-direction: column-reverse;
     }
     
+  }
+  
+  .content_whatido {
+    display: flex;
+    flex-wrap: wrap;
   }
 
 

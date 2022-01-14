@@ -6,7 +6,7 @@
 html  {
   font-size: 100%;
   font-family: $generalfont;
-  
+  position: absolute;
 }
 
 img{
@@ -21,4 +21,9 @@ h3{
 
 p{
   margin: 0px 0px 0px 0px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }

@@ -6,6 +6,7 @@
 html {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
+  position: absolute;
 }
 
 img {
@@ -21,8 +22,13 @@ p {
   margin: 0px 0px 0px 0px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0 0 0 0;
   background-color: #04B2D9;
@@ -179,9 +185,19 @@ header {
   margin: 10px 60px 10px 10px;
   padding: 10px 10px 10px 10px;
   text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-a {
+.cv_button:hover {
+  border: 2px solid white;
+  background-color: #f2a03d;
+  color: #1D3557;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cv_button a {
   color: white;
   text-decoration: none;
 }
@@ -228,7 +244,7 @@ label {
   margin: 0px 20px 20px;
 }
 
-.lbl-menu--icono {
+.lbl-menu--icono-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +261,7 @@ label {
   transition: all 0.4s ease-in-out;
 }
 
-.lbl-menu--icono:hover {
+.lbl-menu--icono-container:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: white;
@@ -269,7 +285,6 @@ label {
 
 .lbl-menu label:hover {
   background-color: white;
-  color: black;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -325,6 +340,10 @@ label {
   padding-bottom: 20px;
 }
 
+.tab1 p {
+  max-width: 90%;
+}
+
 .hobbies {
   max-width: 90%;
   background: #A8DADC;
@@ -338,16 +357,31 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
+  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
+          box-shadow: 3px 3px 5px 3px #4e4e4e;
 }
 
 .hobbies div {
-  max-width: 50%;
   padding: 20px 20px 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .texto-hobby {
   max-width: 50%;
   font-size: smaller;
+}
+
+.texto-hobby h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.texto-hobby a {
+  color: #1D3557;
+  font-weight: 600;
 }
 
 .svg-hobby {
@@ -362,6 +396,21 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.myself .texto-hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.astro .texto-hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tab2 {
@@ -410,7 +459,7 @@ label {
 
 footer {
   width: 100vw;
-  height: 150px;
+  height: 120px;
   margin-right: 0px;
   padding: 0px auto;
   left: 0px;
@@ -555,12 +604,6 @@ ul[class^=list-idiomas] {
             transform: scale(0.7);
   }
 }
-@media screen and (max-width: 1275px) {
-  .hobbies {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 @media screen and (max-width: 1235px) {
   .texto-hobby {
     max-width: 90%;
@@ -585,6 +628,14 @@ ul[class^=list-idiomas] {
             flex-direction: column-reverse;
   }
 }
+.content_whatido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @media screen and (max-width: 780px) {
   a #text {
     display: none;
@@ -618,42 +669,12 @@ ul[class^=list-idiomas] {
   height: 200px;
   border: solid 5px white;
   border-radius: 50%;
+  margin: 20px;
   background-color: orange;
-  background-image: url("../images/avatar.jpg");
+  background-image: url("../../images/avatar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.avatar:hover + .avatar__edit {
-  -webkit-transform: scale(1.1) rotate(10deg);
-          transform: scale(1.1) rotate(10deg);
-  -webkit-box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
-}
-.avatar__edit {
-  position: absolute;
-  bottom: -0.5em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: white;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2.3em;
-  border-radius: 50%;
-  text-align: center;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.avatar__edit svg {
-  width: 1em;
-  height: 1em;
-}
-.avatar__container {
-  position: relative;
-  text-align: center;
-  background-color: pink;
 }
 
 h2 {

@@ -13,7 +13,7 @@ label{
     margin: 0px 20px 20px;
   } 
 
-  .lbl-menu--icono{
+  .lbl-menu--icono-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ label{
     transition: all .4s ease-in-out;
   } 
 
-  .lbl-menu--icono:hover{
+  .lbl-menu--icono-container:hover{
     transform: scale(1.1);
     color: $blanco;
   }
@@ -44,7 +44,6 @@ label{
   
    .lbl-menu label:hover{
     background-color: $blanco;
-    color: black;
     transform: scale(1.1);
   
   }
