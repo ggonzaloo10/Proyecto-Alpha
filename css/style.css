@@ -345,13 +345,8 @@ label {
   padding-bottom: 20px;
 }
 
-.tab1 p {
-  max-width: 90%;
-}
-
 .hobbies {
   max-width: 90%;
-  background: #A8DADC;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,8 +357,6 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
-          box-shadow: 3px 3px 5px 3px #4e4e4e;
 }
 
 .hobbies div {
@@ -384,7 +377,7 @@ label {
   padding-top: 0;
 }
 
-.texto-hobby a {
+.crossfit-link {
   color: #1D3557;
   font-weight: 600;
 }
@@ -403,14 +396,21 @@ label {
           align-items: center;
 }
 
-.myself .texto-hobby {
+.myself {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 10px auto;
+}
+
+.myself div {
+  max-width: 50%;
 }
 
 .astro .texto-hobby {
@@ -451,11 +451,8 @@ label {
 .whatido_item {
   margin: 20px 20px;
   min-width: 225px;
-  background: #A8DADC;
   border-radius: 10px;
   padding: 20px 20px;
-  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
-          box-shadow: 3px 3px 5px 3px #4e4e4e;
 }
 
 .tab3 {
@@ -478,18 +475,15 @@ ul[class^=list] {
   display: grid;
   gap: 0px 10px;
   padding: 0px;
-  margin: 5px 0px 20px;
+  margin: 5px 5px 20px;
   list-style: none;
-  background: #A8DADC;
   border-radius: 5px;
   padding: 20px 20px;
-  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
-          box-shadow: 3px 3px 5px 3px #4e4e4e;
 }
 
 .list-estudios {
-  -ms-grid-columns: (minmax(500px, 700px))[1];
-  grid-template-columns: repeat(1, minmax(500px, 700px));
+  -ms-grid-columns: (minmax(200px, 700px))[1];
+  grid-template-columns: repeat(1, minmax(200px, 700px));
   min-width: 530px;
 }
 
@@ -638,7 +632,16 @@ footer {
             transform: scale(0.7);
   }
 }
-@media screen and (max-width: 1235px) {
+@media screen and (max-width: 1070px) {
+  h1 {
+    text-align: center;
+  }
+
+  .myself div {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1335px) {
   .texto-hobby {
     max-width: 90%;
   }
@@ -673,6 +676,10 @@ footer {
 @media screen and (max-width: 780px) {
   a #text {
     display: none;
+  }
+
+  .tab3 {
+    min-width: 80%;
   }
 }
 .card-link {

@@ -10,21 +10,21 @@
  
 //  PRIMER TEXTO WHOIAM
 
- .tab1 p{
-   max-width: 90%;
- }
+//  .tab1 p{
+//    max-width: 90%;
+//  }
   
 //  CUADROS  HOBBIES //////
 
   .hobbies{
     max-width: 90%;
-   background: $azul-claro;
+  //  background: $azul-claro;
    border-radius: 10px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
-   box-shadow: 3px 3px 5px 3px #4e4e4e;
+  //  box-shadow: 3px 3px 5px 3px #4e4e4e;
   }
   
   .hobbies div{
@@ -47,7 +47,7 @@
     margin-top: 0;
     padding-top: 0;
   }
-  .texto-hobby a{
+  .crossfit-link{
     color: $azul-marino;
     font-weight: 600;
   }
@@ -62,12 +62,17 @@
 
 // 1 HOBBIES: MYSELF 
 
-  .myself .texto-hobby{
+
+  .myself {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 10px auto;
   }
 
+  .myself div{
+    max-width: 50%;
+  }
  
 
 
