@@ -1,6 +1,6 @@
  //////// tab2: WHAT I DO    ////////////////
  .tab2{
-    width: 60%;
+    width: 65%;
     min-width: 350px;
     display: flex;
     justify-content: center;
@@ -14,6 +14,10 @@
   }
 
 .whatido_item{
- margin: 0 20px;
+ margin: 20px 20px;
  min-width: 225px;
+ background: $azul-claro;
+ border-radius: 10px;
+ padding: 20px 20px;
+ box-shadow: 3px 3px 5px 3px #4e4e4e;
 }

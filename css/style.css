@@ -31,7 +31,10 @@ body {
   width: 100vw;
   height: 100%;
   margin: 0 0 0 0;
-  background-color: #04B2D9;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #04B2D9), to(#1D3557));
+  background-image: linear-gradient(90deg, #04B2D9 50%, #1D3557 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +247,6 @@ label {
           justify-content: space-between;
   max-width: 700px;
   margin: 0px 20px 20px;
-  border: 1px solid;
 }
 
 .lbl-menu--icono-container {
@@ -350,7 +352,7 @@ label {
 .hobbies {
   max-width: 90%;
   background: #A8DADC;
-  border-radius: 20px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +410,7 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 10px auto;
 }
 
 .astro .texto-hobby {
@@ -417,7 +420,7 @@ label {
 }
 
 .tab2 {
-  width: 60%;
+  width: 65%;
   min-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,13 +449,62 @@ label {
 }
 
 .whatido_item {
-  margin: 0 20px;
+  margin: 20px 20px;
   min-width: 225px;
+  background: #A8DADC;
+  border-radius: 10px;
+  padding: 20px 20px;
+  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
+          box-shadow: 3px 3px 5px 3px #4e4e4e;
 }
 
 .tab3 {
   width: 60%;
+  min-width: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab3 h3 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul[class^=list] {
+  display: -ms-grid;
+  display: grid;
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 5px 0px 20px;
+  list-style: none;
+  background: #A8DADC;
+  border-radius: 5px;
+  padding: 20px 20px;
+  -webkit-box-shadow: 3px 3px 5px 3px #4e4e4e;
+          box-shadow: 3px 3px 5px 3px #4e4e4e;
+}
+
+.list-estudios {
+  -ms-grid-columns: (minmax(500px, 700px))[1];
+  grid-template-columns: repeat(1, minmax(500px, 700px));
   min-width: 530px;
+}
+
+.list-software {
+  -ms-grid-columns: (minmax(140px, 100px))[3];
+  grid-template-columns: repeat(3, minmax(140px, 100px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 470px;
+}
+
+ul[class^=list-idiomas] {
+  -ms-grid-columns: (minmax(500px, 600px))[1];
+  grid-template-columns: repeat(1, minmax(500px, 600px));
 }
 
 .tab4 {
@@ -538,34 +590,6 @@ footer {
 
 .social-icon svg path {
   fill: #A8DADC;
-}
-
-ul[class^=list] {
-  display: -ms-grid;
-  display: grid;
-  gap: 0px 10px;
-  padding: 0px;
-  margin: 5px 0px 20px;
-  overflow: hidden;
-  list-style: none;
-}
-
-.list-estudios {
-  -ms-grid-columns: (minmax(500px, 700px))[1];
-  grid-template-columns: repeat(1, minmax(500px, 700px));
-}
-
-.list-software {
-  -ms-grid-columns: (minmax(140px, 100px))[3];
-  grid-template-columns: repeat(3, minmax(140px, 100px));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-ul[class^=list-idiomas] {
-  -ms-grid-columns: (minmax(500px, 600px))[1];
-  grid-template-columns: repeat(1, minmax(500px, 600px));
 }
 
 .grid {

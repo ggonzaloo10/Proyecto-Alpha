@@ -1,5 +1,47 @@
 //////// tab3: SKILLS   ////////////////
 .tab3{
     width: 60%;
-    min-width: 530px;
+    min-width: 600px;
+    align-items: center;
   }
+
+  .tab3 h3{
+    text-align: center;
+    align-items: center;
+  }
+
+  ul[class^='list']{   
+    display: grid;
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 5px 0px 20px;
+    list-style: none;
+    background: $azul-claro;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: 3px 3px 5px 3px #4e4e4e;
+}
+
+
+.list-estudios{
+
+    grid-template-columns: repeat(1, minmax(500px, 700px));
+   
+    min-width: 530px;
+  
+}
+
+.list-software{
+
+    grid-template-columns: repeat(3, minmax(140px, 100px));
+   justify-content: center;
+ 
+   min-width: 470px;
+}
+
+
+ul[class^='list-idiomas']{
+
+    grid-template-columns: repeat(1, minmax(500px, 600px));
+  
+}

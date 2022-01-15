@@ -5,6 +5,7 @@
  display: grid;
  place-items: center;
  padding-bottom: 20px;
+
  }
  
 //  PRIMER TEXTO WHOIAM
@@ -18,7 +19,7 @@
   .hobbies{
     max-width: 90%;
    background: $azul-claro;
-   border-radius: 20px;
+   border-radius: 10px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -64,6 +65,7 @@
   .myself .texto-hobby{
     display: flex;
     justify-content: center;
+    margin: 0 10px auto;
   }
 
  
