@@ -2,7 +2,6 @@
  //////// tab1: WHO I AM    ////////////////
  .tab1{
     width: 80%;
- display: grid;
  place-items: center;
  padding-bottom: 20px;
 
@@ -55,7 +54,7 @@
 
   .svg-hobby{
     margin: 0px 0px 0px 0px;
-    display: flex;
+   display: block;
     flex-direction: column-reverse;
     align-items: center;
   }

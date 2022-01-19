@@ -3,9 +3,11 @@ body{
     height: 100%;
     margin: 0 0 0 0;
     
-    background-image: linear-gradient(90deg, $azul-cyan 50%, $azul-marino 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    // FONDO BLANCO MEJOR PARA NO PERDER LEGELIBILIDAD
+    // background-image: linear-gradient(90deg, $azul-cyan 50%, $azul-marino 100%);
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
     // El color en degradado del fondo no funciona bien, por eso hay un color sólido
 
