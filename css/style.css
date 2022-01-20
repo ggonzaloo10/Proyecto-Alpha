@@ -309,8 +309,9 @@ label {
   line-height: 1.8;
   border-radius: 20px;
   display: none;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 1s;
+  transition: all 0.4s ease-in-out 1s;
   padding: 20px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -328,10 +329,10 @@ label {
 #radio2:checked ~ .tab2,
 #radio3:checked ~ .tab3,
 #radio4:checked ~ .tab4 {
-  display: block;
-  visibility: visible;
+  opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+  display: block;
   -ms-flex-line-pack: center;
       align-content: center;
 }
