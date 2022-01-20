@@ -1,7 +1,6 @@
 
  //////// tab1: WHO I AM    ////////////////
  .tab1{
-    width: 80%;
  place-items: center;
  padding-bottom: 20px;
 
@@ -16,13 +15,11 @@
 //  CUADROS  HOBBIES //////
 
   .hobbies{
-    max-width: 90%;
   //  background: $azul-claro;
    border-radius: 10px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin-top: 20px;
   //  box-shadow: 3px 3px 5px 3px #4e4e4e;
   }
   
@@ -66,7 +63,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px auto;
   }
 
   .myself div{
@@ -78,4 +74,9 @@
 // 3 HOBBIES: ASTRONOMY /// 
   .astro .texto-hobby{
     display: flex;
+  
+  }
+
+  .andMore img{
+    margin: 20px 20px 20px 20px;
   }
