@@ -303,7 +303,7 @@ label {
 }
 
 [class^=tab] {
-  width: 80%;
+  width: 90%;
   position: absolute;
   margin: 0 10px 0 10px;
   line-height: 1.8;
@@ -379,7 +379,9 @@ label {
 
 .svg-hobby {
   margin: 0px 0px 0px 0px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -449,9 +451,8 @@ label {
 
 .tab3 {
   min-width: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .tab3 h3 {
@@ -461,7 +462,30 @@ label {
           align-items: center;
 }
 
-ul[class^=list] {
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list {
   display: -ms-grid;
   display: grid;
   gap: 0px 10px;
@@ -470,25 +494,30 @@ ul[class^=list] {
   list-style: none;
   border-radius: 5px;
   padding: 20px 20px;
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
 }
-
-.list-estudios {
+.list--smaller {
+  font-size: smaller;
+}
+.list--estudios {
   -ms-grid-columns: (minmax(200px, 700px))[1];
   grid-template-columns: repeat(1, minmax(200px, 700px));
 }
-
-.list-software {
-  -ms-grid-columns: (minmax(140px, 100px))[3];
-  grid-template-columns: repeat(3, minmax(140px, 100px));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-width: 470px;
+.list--software {
+  height: 70%;
+  -ms-grid-columns: (minmax(100px, 120px))[3];
+  grid-template-columns: repeat(3, minmax(100px, 120px));
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
-
-ul[class^=list-idiomas] {
-  -ms-grid-columns: (minmax(500px, 600px))[1];
-  grid-template-columns: repeat(1, minmax(500px, 600px));
+.list--software--softskill {
+  -ms-grid-columns: (minmax(120px, 300px))[1];
+  grid-template-columns: repeat(1, minmax(120px, 300px));
+}
+.list--idiomas {
+  -ms-grid-columns: (minmax(200px, 700px))[1];
+  grid-template-columns: repeat(1, minmax(200px, 700px));
 }
 
 .tab4 {
