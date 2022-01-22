@@ -1,4 +1,7 @@
  // tab4: CONTACT ME
  .tab4{
+   display: flex;
     min-width: 360px;
+    justify-content: center;
+    flex-direction: column;
   }

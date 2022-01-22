@@ -20,7 +20,7 @@
             </div>
 
             <botton class="div_header cv_button">
-                <a href="../files/cv_GonzaloSoriano_esp.pdf" class="resumen-botton" target="_blank">Resume</a>
+                <a href="../files/cv_GonzaloSoriano_esp.pdf" class="resumen-botton" target="_blank">CV .pdf</a>
             </botton>
         </div>
     </header>
@@ -265,7 +265,7 @@
                 <div class="skills">
                     <div>
                         <h3>HERRAMIENTAS:</h3>
-                        <ul class="list list--software list--smaller">
+                        <ul class="list list--software list--smaller list--center">
                             <li>- Catia V5.</li>
                             <li>- Illustrator.</li>
                             <li>- HTML5.</li>
@@ -314,7 +314,7 @@
 
                     <div class="full">
                         <h3>IDIOMAS:</h3>
-                        <ul class="list list--idiomas">
+                        <ul class="list list--estudios">
 
                             <li>English:</li>
                             <li>- Level 12 of Trinity College of London (C2).</li>
@@ -335,36 +335,38 @@
             <input type="radio" name="radio" id="radio4">
             <div class="tab4">
                 <h2 class="align-center">Contact me </h2>
-                <form class="contactMe" action="">
+                <div>
+                    <form class="contactMe" action="">
 
-                    <div class="form-contact-grid">
+                        <div class="form-contact-grid">
 
-                        <div class="name">
-                            <label for="first-name">NOMBRE *</label>
-                            <input type="text" class="text-field round-border" maxlength="256" required>
+                            <div class="name">
+                                <label for="first-name">NOMBRE *</label>
+                                <input type="text" class="text-field round-border" maxlength="256" required>
+                            </div>
+
+                            <div class="number">
+                                <label for="contact-number">MÓVIL</label>
+                                <input type="tel" class="text-field round-border" maxlength="256">
+                            </div>
+
+                            <div class="email">
+                                <label for="contact-email">E-MAIL *</label>
+                                <input type="email" class="text-field round-border" maxlength="256" required>
+                            </div>
+
+                            <div class="message">
+                                <label for="contact-message">MENSAJE</label>
+                                <textarea class="round-border" name="mensaje" id="" cols="30" rows="10"
+                                    placeholder="Example text"></textarea>
+                            </div>
+
+
+                            <button class="send-button" type="submit">ENVIAR</button>
+
                         </div>
-
-                        <div class="number">
-                            <label for="contact-number">MÓVIL</label>
-                            <input type="tel" class="text-field round-border" maxlength="256">
-                        </div>
-
-                        <div class="email">
-                            <label for="contact-email">E-MAIL *</label>
-                            <input type="email" class="text-field round-border" maxlength="256" required>
-                        </div>
-
-                        <div class="message">
-                            <label for="contact-message">MENSAJE</label>
-                            <textarea class="round-border" name="mensaje" id="" cols="30" rows="10"
-                                placeholder="Example text"></textarea>
-                        </div>
-
-
-                        <button class="send-button" type="submit">ENVIAR</button>
-
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
 
         </div>
