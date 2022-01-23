@@ -1,21 +1,87 @@
 
 // MEDIA QUORIES PARA HACER RESPONSIVE EL MENU
 
-@media screen and (max-width: 600px) {
-    .lbl-menu {
-      display: flex;
+@media screen and (max-width: 375px) {
+
+      .lbl-menu {
+        display: flex;
       flex-wrap: wrap;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    } 
+      } 
+
+      
+}
+
+.list--software--tools{
+
+  grid-template-columns: repeat(2, minmax(100px, 70%));
+
+}
+
+@media screen and (max-width: 500px){
+
+ .div_header{
+
+   min-width: 0;
+  }
+
+  .cv_button{
+
+    margin-right: $space;
+    border-radius: 0.5*$unit;
+  }
+
   
-    .lbl-menu--icono-container{
-      transform: scale(0.7);
-    }
+
+}
+
+@media screen and (max-width: 800px ) {
+
+  .lbl-menu--icono-container {
+    width: 50%;
+    margin-top: $space;
+  }
+
+  .form-contact-grid{
+
+    width: 100%;
+  }
+
+ 
+}
+
+
+
+@media screen and (max-width: 900px ) {
+
+.skills{
+
+  flex-direction: column;
+}
+
+.skills div{
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+}
+
+
+  //     } 
+// @media screen and (max-width: 600px) {
+//     .lbl-menu {
+//       display: flex;
+//       flex-wrap: wrap;
+//     // flex-direction: column;
+//     // justify-content: flex-start;
+//     } 
+  
+//     .lbl-menu--icono-container{
+//       transform: scale(0.7);
+//     }
   
    
     
-  }
+//   }
 
   @media screen and (max-width: 1070px) {
 
@@ -23,21 +89,19 @@
     text-align: center;
      }
 
-     .myself div{
-      max-width: 100%;
-    }
 
   }
 
   // MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
 
-  // @media screen and (max-width: 1275px) {
+  @media screen and (max-width: 1275px) {
    
-  //   .hobbies{
-  //     flex-wrap: wrap;
-  //   }
+    .hobbies{
+      flex-wrap: wrap;
+    }
     
-  // }
+    
+  }
 
   @media screen and (max-width: 1335px) {
 
@@ -62,19 +126,24 @@
     flex-wrap: wrap;
   }
 
+  .send-button{
+    margin: 20px 20px;
 
-// PARA ADAPTAR EL FOOTER 
+  }
 
-@media screen and (max-width: 780px) {
+
+// // PARA ADAPTAR EL FOOTER 
+
+// @media screen and (max-width: 780px) {
 
   
 
-  a #text{
-    display: none;
-  }
+//   a #text{
+//     display: none;
+//   }
   
-  .tab3 {
-    min-width: 80%;
-  }
-}
+//   .tab3 {
+//     min-width: 80%;
+//   }
+// }
 

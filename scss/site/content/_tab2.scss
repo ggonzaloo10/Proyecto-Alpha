@@ -1,13 +1,12 @@
  //////// tab2: WHAT I DO    ////////////////
  .tab2{
    display: flex;
-    min-width: 350px;
     justify-content: center;
    flex-direction: column;
   } 
   .content_whatido {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
   justify-content: center;
   }

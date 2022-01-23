@@ -1,6 +1,6 @@
 //-----> $SPACE Variables
 
-$unit: 6px;
+$unit: 5px;
 $space: $unit * 2;
 $space--medium: $space * 1.5;
 $padding: $unit;
@@ -18,3 +18,10 @@ $azul-claro: #A8DADC;
 $blanco: white;
 
 $main-color: $amarillo;
+
+
+// FONTS
+
+$generalfont: 'Montserrat', sans-serif;
+
+$titlefont: 'Outfit', sans-serif;

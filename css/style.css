@@ -1,16 +1,27 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+:root {
+  font-size: 14px;
 }
 
-html {
-  font-size: 100%;
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
+.icon--title {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h3 {
-  margin: 20px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 p {
@@ -20,6 +31,22 @@ p {
 a {
   color: white;
   text-decoration: none;
+}
+
+.crossfit-link {
+  color: #1D3557;
+  font-weight: 600;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
 }
 
 body {
@@ -368,26 +395,26 @@ label {
 }
 
 .hobbies div {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 10px 20px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .texto-hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 50%;
-  font-size: smaller;
 }
 
 .texto-hobby h4 {
-  text-transform: uppercase;
   margin-top: 0;
   padding-top: 0;
-}
-
-.crossfit-link {
-  color: #1D3557;
-  font-weight: 600;
 }
 
 .svg-hobby {
@@ -434,7 +461,6 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 350px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -448,10 +474,8 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -469,7 +493,6 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 600px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -642,12 +665,12 @@ footer {
   width: 80%;
 }
 .grid__cell {
-  padding: 12px;
+  padding: 10px;
 }
 .grid__cell--50 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 6px);
-          flex: 0 0 calc(50% - 6px);
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
 }
 .grid__cell--10 {
   -webkit-box-flex: 0;
@@ -660,7 +683,7 @@ footer {
           flex: 0 0 33%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .lbl-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,19 +691,54 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.list--software--tools {
+  -ms-grid-columns: (minmax(100px, 70%))[2];
+  grid-template-columns: repeat(2, minmax(100px, 70%));
+}
 
+@media screen and (max-width: 500px) {
+  .div_header {
+    min-width: 0;
+  }
+
+  .cv_button {
+    margin-right: 10px;
+    border-radius: 2.5px;
+  }
+}
+@media screen and (max-width: 800px) {
   .lbl-menu--icono-container {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .form-contact-grid {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .skills div {
+    width: 100%;
+    margin: 0 0 0 0;
   }
 }
 @media screen and (max-width: 1070px) {
   h1 {
     text-align: center;
   }
-
-  .myself div {
-    max-width: 100%;
+}
+@media screen and (max-width: 1275px) {
+  .hobbies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1335px) {
@@ -715,21 +773,16 @@ footer {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 780px) {
-  a #text {
-    display: none;
-  }
-
-  .tab3 {
-    min-width: 80%;
-  }
+.send-button {
+  margin: 20px 20px;
 }
+
 .card-link {
   display: inline-block;
-  padding: 18px;
+  padding: 15px;
   background-color: #ec8810;
   color: white;
-  margin: 12px;
+  margin: 10px;
 }
 .card-link:visited {
   color: white;
@@ -758,18 +811,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-h2 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 800;
-  font-size: 60px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-h3 {
-  margin-top: 0px;
 }
 
 .align-center {
