@@ -1,10 +1,10 @@
 :root {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .icon--title {
   font-family: "Outfit", sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 h1 {
@@ -366,15 +366,18 @@ label {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  display: block;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.tab1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tab1 {
   place-items: center;
   padding-bottom: 20px;
 }
@@ -393,9 +396,6 @@ label {
 
 .hobbies div {
   padding: 20px 10px 20px 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .texto-hobby {
@@ -407,6 +407,9 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .texto-hobby h4 {
@@ -440,10 +443,6 @@ label {
           align-items: center;
 }
 
-.myself div {
-  max-width: 50%;
-}
-
 .astro .texto-hobby {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,9 +454,6 @@ label {
 }
 
 .tab2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -487,9 +483,6 @@ label {
 }
 
 .tab3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -559,9 +552,6 @@ label {
 }
 
 .tab4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-width: 360px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -840,7 +830,8 @@ footer {
   border: solid 5px white;
   border-radius: 50%;
   margin: 20px;
-  background-image: url("../../images/fotocarnet.jpg");
+  background-color: #f2a03d;
+  background-image: url(../../images/astronomy.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

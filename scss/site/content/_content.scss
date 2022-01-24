@@ -34,7 +34,8 @@
   #radio4:checked ~ .tab4 {
     opacity: 1;
    transform: scale(1);
-   display: block;
+   display: flex;
    align-content: center;
+   flex-direction: column;
    
   }
