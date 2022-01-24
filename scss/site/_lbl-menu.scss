@@ -27,12 +27,11 @@ label{
 
   .lbl-menu--icono-container:hover{
     transform: scale(1.1);
-    color: $blanco;
+ 
   }
 
   .lbl-menu label{
     background-color: $amarillo;
-    /* border: 5px solid #E4EFF0; */
     color: $blanco;
     width: 80px;
     height: 80px;
@@ -46,7 +45,7 @@ label{
    }
   
    .lbl-menu label:hover{
-    background-color: $blanco;
+  
     transform: scale(1.1);
   
   }

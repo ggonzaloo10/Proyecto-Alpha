@@ -117,6 +117,7 @@
     .astro{
       align-content: center;
       flex-direction: column-reverse;
+      justify-content: center;
     }
     
   }
@@ -132,18 +133,40 @@
   }
 
 
-// // PARA ADAPTAR EL FOOTER 
+// PARA ADAPTAR EL FOOTER 
 
-// @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
+
+.div--none{
+  display: none;
+}
+
+.div_footer{
+  min-width: 0;
+}
+
+  .social-contact{
+   justify-content: left;
+  }
 
   
 
-//   a #text{
-//     display: none;
-//   }
+  .social{
+    margin-top: 0;
+    align-items: left;
+  }
+
   
-//   .tab3 {
-//     min-width: 80%;
-//   }
-// }
+  .social a{
+
+    margin: 5px 10px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+  
+   
+  }
+}
 

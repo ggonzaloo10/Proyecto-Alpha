@@ -303,12 +303,10 @@ label {
 .lbl-menu--icono-container:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: white;
 }
 
 .lbl-menu label {
   background-color: #f2a03d;
-  /* border: 5px solid #E4EFF0; */
   color: white;
   width: 80px;
   height: 80px;
@@ -323,7 +321,6 @@ label {
 }
 
 .lbl-menu label:hover {
-  background-color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -347,8 +344,8 @@ label {
   border-radius: 20px;
   display: none;
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   padding: 20px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -616,9 +613,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0px 0px 0px 0px;
   margin-right: 0px;
   margin-top: 20px;
@@ -645,6 +639,7 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 0 10px;
 }
 
 .social-icon svg {
@@ -763,6 +758,9 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .content_whatido {
@@ -777,6 +775,42 @@ footer {
   margin: 20px 20px;
 }
 
+@media screen and (max-width: 780px) {
+  .div--none {
+    display: none;
+  }
+
+  .div_footer {
+    min-width: 0;
+  }
+
+  .social-contact {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+
+  .social {
+    margin-top: 0;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+
+  .social a {
+    margin: 5px 10px;
+  }
+
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .card-link {
   display: inline-block;
   padding: 15px;
