@@ -5,7 +5,6 @@
 }
 
 .form-contact-grid{
-    width: 50%;
     display: grid;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -39,6 +38,7 @@
 .message{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .send-button {

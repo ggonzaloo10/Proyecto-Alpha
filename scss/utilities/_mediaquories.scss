@@ -27,14 +27,51 @@
   .cv_button{
 
     margin-right: $space;
-    border-radius: 0.5*$unit;
+    border-radius: 2*$unit;
   }
 
   
 
 }
 
+@media screen and (max-width: 560px ) {
+
+
+
+  .div--andMore--svg{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.img--50{
+  transform: scale(.6);
+  width: calc(50% - 40px);
+}
+
+.crossfit{
+  flex-wrap: nowrap;
+}
+
+}
+
+
+@media screen and (max-width: 750px ) {
+
+.svg-hobby{
+  align-items:initial;
+}
+
+header{
+  width: 100%;
+}
+
+
+}
+
+
 @media screen and (max-width: 800px ) {
+
+  
 
   .lbl-menu--icono-container {
     width: 50%;
@@ -46,6 +83,7 @@
     width: 100%;
   }
 
+  
  
 }
 
@@ -92,30 +130,39 @@
 
   }
 
+  @media screen and (max-width: 1075px) {
+
+    .texto-hobby{
+   max-width: 100%;
+    }
+ 
+ 
+   }
+
   // MEDIA QUORIES PARA HACER RESPONSIVE EL CONTENT
 
-  @media screen and (max-width: 1275px) {
+  // @media screen and (max-width: 1275px) {
    
-    .hobbies{
-      flex-wrap: wrap;
-    }
+  //   .hobbies{
+  //     flex-wrap: wrap;
+  //   }
     
     
-  }
+  // }
 
   @media screen and (max-width: 1335px) {
 
-    .texto-hobby{
-      max-width: 90%;
-    }
-    
+    // .texto-hobby{
+    //   max-width: 90%;
+    // }
+
+
   .crossfit{
     flex-direction: column;
-    align-items: center;
   }
 
     .astro{
-      align-content: center;
+      // align-content: center;
       flex-direction: column-reverse;
       justify-content: center;
     }

@@ -1,14 +1,14 @@
 .content{
-    height: 1100px;
-    margin-bottom: 350px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex: 1 ;
+  justify-content: center;
+    margin-bottom: 20px;
   
   }
   
   [class^="tab"] {
     width: 90%;
-    position: absolute;
+    // position: absolute;
     margin: 0 10px 0 10px;
     line-height: 1.8;
     border-radius: 20px;

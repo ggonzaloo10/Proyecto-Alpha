@@ -5,6 +5,7 @@
 
 
 .icon--title{
+  color: $azul-marino;
     font-family: $titlefont;
     font-size: .8rem;
 }
@@ -12,6 +13,10 @@
 h1{
     font-size: 1.5rem;
     margin: 0 0 0 0;
+}
+
+.outfitFont{
+  font-family: $titlefont;
 }
 
 h2{
