@@ -130,10 +130,19 @@ header{
 
   }
 
+  @media screen and (min-width: 1070px) {
+
+ 
+    .intro{
+      max-width: 90%;
+       }
+ 
+   }
+
   @media screen and (max-width: 1075px) {
 
     .texto-hobby{
-   max-width: 100%;
+   max-width: 90%;
     }
  
  

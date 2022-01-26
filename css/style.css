@@ -344,7 +344,7 @@ label {
 }
 
 [class^=tab] {
-  width: 90%;
+  width: 90vw;
   margin: 0 10px 0 10px;
   line-height: 1.8;
   border-radius: 20px;
@@ -461,16 +461,6 @@ label {
   margin: 20px 20px 20px 20px;
 }
 
-.tab2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .content_whatido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +552,6 @@ label {
 }
 
 .tab4 {
-  min-width: 360px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -761,9 +750,14 @@ footer {
     text-align: center;
   }
 }
+@media screen and (min-width: 1070px) {
+  .intro {
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 1075px) {
   .texto-hobby {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 1335px) {
