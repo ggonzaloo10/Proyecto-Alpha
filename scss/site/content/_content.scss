@@ -24,9 +24,11 @@
   }
   
 
+
   #radio1, #radio2, #radio3, #radio4{
     display:none;
   }
+  
   
   #radio1:checked ~ .tab1, 
   #radio2:checked ~ .tab2,
