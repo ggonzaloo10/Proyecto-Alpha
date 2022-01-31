@@ -183,6 +183,10 @@ body {
   text-decoration: none;
 }
 
+textarea {
+  padding: 10px 10px;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -549,6 +553,7 @@ label {
   height: 70%;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 30px;
 }
 .list--software {
   height: 70%;
