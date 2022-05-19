@@ -1,6 +1,11 @@
 ## Responsive Portfolio Website
 ## **Enlace a la web:** https://frontend.esatid3-2021.com/gonzalo/about%20me%20gonzalo/index.html
 
+## **Herramientas:**
+
+![image](https://user-images.githubusercontent.com/92878148/169273502-b3eb035a-3c03-4f57-b247-90aec31a1edc.png)
+
+
 ## **Requisitos**
 ### **Instalación**
 Debes clonar el repositorio del proyecto.
@@ -21,6 +26,13 @@ Este fue el primer proyecto web que hice con html y css. Los elementos principal
 ![image](https://user-images.githubusercontent.com/92878148/169272804-96fa855d-1196-499f-a732-350b858fe641.png)
 ![image](https://user-images.githubusercontent.com/92878148/169272840-4f9d74f2-bc44-4b94-9a25-4edd50391555.png)
 ![image](https://user-images.githubusercontent.com/92878148/169272860-15014058-cfc6-4442-a55e-740659d2d7e0.png)
+
+Para la paleta de colores, elegí una gama de azules ya que transmiten libertad, lealtad, armonía, fidelidad, seriedad y verdad; cualidades que me parece que debería transmitir un perfil profesional.
+EL incluir algun amarillo crea contraste para poder destacar cualquier elemento en algún momento.
+
+![image](https://user-images.githubusercontent.com/92878148/169273399-a7baeafd-9c48-4b6d-93d0-ef2f9f028922.png)
+
+
 
 
 ## **Nomenclatura**
